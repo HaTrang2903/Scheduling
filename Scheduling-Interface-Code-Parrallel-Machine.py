@@ -509,7 +509,7 @@ def srpt_scheduler(jobs, num_machines=1, allow_overlap=False):
                     job_id = available_jobs[idx_jobs]
                     needed_for_this_job = remaining_time[job_id]
                     can_alloc = min(needed_for_this_job, num_machines - machine_used)
-                    for m in range(can_alloc):
+                    for m in range(int(can_alloc)):
                         machine_num = machine_used + 1 + m
                         schedule.append((current_time, machine_num, job_id))
                         current_job_on_machine[machine_num] = job_id
