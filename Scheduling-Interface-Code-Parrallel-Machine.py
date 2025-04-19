@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 from collections import defaultdict
 import matplotlib.cm as cm
 import matplotlib.ticker as ticker
-import tensorflow as tf
 import io
 import base64
 import PIL.Image
